@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Mariá · Lista VIP | Mariá Head & Hair Spa</title>
+<meta name="description" content="As melhores condições do ano chegam primeiro para você. Cadastre-se para receber ofertas exclusivas e ter acesso antecipado à nossa seleção especial de produtos e rituais.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="Black Mariá · Lista VIP">
+<meta property="og:description" content="Cadastre-se para receber ofertas exclusivas e ter acesso antecipado à nossa seleção especial de produtos e rituais.">
+<meta property="og:type" content="website">
+<!-- og:image: cole aqui a URL da imagem de compartilhamento (1200×630) -->
+<meta property="og:image" content="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-01a-hero-desktop.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+:root{
+  --bg:#0a0a0a;
+  --bg-2:#111110;
+  --fg:#eeeae4;
+  --fg-2:#a39d96;
+  --fg-3:#8a847e;
+  --line:rgba(238,234,228,.12);
+  --line-2:rgba(238,234,228,.3);
+  --gold:#c9a663;
+  --error:#eba597;
+  --sans:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display:"Instrument Serif","Times New Roman",serif;
+  --serif:"Instrument Serif","Times New Roman",serif;
+  --gutter:clamp(20px,4vw,56px);
+  --section:clamp(120px,13vw,208px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 .9375rem/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ol{margin:0}
+ol{padding:0;list-style:none}
+::selection{background:var(--fg);color:var(--bg)}
+::placeholder{color:var(--fg-3);opacity:1}
+:focus-visible{outline:1px solid var(--fg);outline-offset:4px}
+html{scrollbar-color:#2a2827 var(--bg)}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#2a2827}
+.skip{position:absolute;left:16px;top:-60px;z-index:200;background:var(--fg);color:var(--bg);padding:10px 16px;font-size:.8125rem}
+.skip:focus{top:16px}
+.wrap{padding-inline:var(--gutter)}
+.top > .wrap,.hero > .wrap,.foot__top,.foot__bar{max-width:1600px;margin-inline:auto}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2vw,32px)}
+
+/* type */
+.label{font:500 .6875rem/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.display{font-family:var(--display);font-weight:400;letter-spacing:-.015em;line-height:.9}
+.h2{font:400 clamp(2.75rem,6vw,5.75rem)/.95 var(--display);letter-spacing:-.015em}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:0;text-transform:none}
+.muted{color:var(--fg-2)}
+.small{font-size:.875rem;line-height:1.7;color:var(--fg-2)}
+
+/* links & buttons */
+.link{display:inline-flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--line-2);font:500 .6875rem/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;transition:border-color .4s,gap .4s var(--ease)}
+.link svg{width:12px;height:12px}
+.link:hover{border-color:var(--fg);gap:14px}
+.btn{display:inline-flex;align-items:stretch;justify-content:space-between;min-height:56px;border:0;padding:0;background:var(--fg);color:var(--bg);font:500 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-align:left;cursor:pointer;transition:background-color .4s var(--ease)}
+.btn__txt{display:flex;align-items:center;padding:0 24px}
+.btn__ico{display:grid;place-items:center;width:56px;border-left:1px solid rgba(10,10,10,.14);flex:none}
+.btn__ico svg{width:16px;height:16px;transition:transform .5s var(--ease)}
+.btn:hover{background:#fff}
+.btn:hover .btn__ico svg{transform:translateX(4px)}
+.btn--line{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--line-2)}
+.btn--line .btn__ico{border-left-color:var(--line-2)}
+.btn--line:hover{background:transparent;box-shadow:inset 0 0 0 1px var(--fg)}
+.btn[aria-busy="true"]{pointer-events:none;opacity:.6}
+.btn[aria-busy="true"] .btn__ico svg{animation:pulse 1s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.2}}
+
+/* image slots */
+.slot{position:relative;margin:0;overflow:hidden;aspect-ratio:var(--r,4/5);background:radial-gradient(80% 60% at 50% 35%,#1d1c1a,#0f0f0e 75%)}
+.slot__hint{position:absolute;left:16px;bottom:14px;font:500 .625rem/1.5 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--fg-3)}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform 1.6s var(--ease)}
+/* fotos coloridas do spa em P&B para conversar com a página; remova "slot--mono" para voltar à cor */
+.slot--mono img{filter:grayscale(1) contrast(1.08) brightness(.78)}
+.slot > img[src=""],.slot > img:not([src]){display:none}
+@media (max-width:767px){.slot picture img[src=""]{display:none}}
+@media (min-width:768px){.slot picture:has(source[srcset=""]) img[src=""]{display:none}}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:10;padding-top:28px}
+.top__row{display:grid;grid-template-columns:1fr auto 1fr;align-items:start}
+.top nav{display:flex;gap:clamp(20px,3vw,44px)}
+.top nav:last-child{justify-content:flex-end}
+.top nav a{color:var(--fg-2);transition:color .3s}
+.top nav a:hover{color:var(--fg)}
+.logo{display:grid;justify-items:center;gap:4px;text-align:center}
+.logo__word{font:400 .9375rem/1 var(--sans);letter-spacing:.42em;padding-left:.42em}
+.logo__sub{font-size:1rem;line-height:1;color:var(--fg-2)}
+
+/* hero */
+.hero{position:relative;min-height:max(100svh,760px);overflow:hidden;isolation:isolate}
+.hero__media{position:absolute;inset:0;z-index:-2;aspect-ratio:auto}
+.hero__media img{object-position:50% 62%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(10,10,10,.7) 0%,rgba(10,10,10,0) 24%,rgba(10,10,10,0) 55%,rgba(10,10,10,.8) 85%,#0a0a0a 100%),linear-gradient(90deg,rgba(10,10,10,.5) 0%,rgba(10,10,10,0) 32%,rgba(10,10,10,0) 68%,rgba(10,10,10,.5) 100%)}
+.hero__title{padding-top:clamp(120px,17vh,168px);font-size:clamp(3.5rem,11.5vw,10rem)}
+.hero__title .ln{display:block;overflow:hidden;padding:.16em 0 .2em;margin:-.16em 0 -.2em}
+.hero__title .ln > span{display:block}
+.hero__title .ln--split > span{display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:.3em}
+.hero__title .ln--split > span > span:last-child{margin-left:auto}
+.hero__sub{display:block;margin-top:22px;text-align:right;font:italic 400 clamp(1.25rem,2.1vw,1.875rem)/1.1 var(--serif);color:var(--fg-2);text-transform:none;letter-spacing:0}
+.hero__foot{position:absolute;left:max(var(--gutter),calc((100% - 1600px) / 2 + var(--gutter)));right:max(var(--gutter),calc((100% - 1600px) / 2 + var(--gutter)));bottom:clamp(32px,5vh,48px);display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.hero__foot p{max-width:300px;font-size:.875rem;line-height:1.7;color:var(--fg-2)}
+
+/* section frame */
+.sec{padding-block:var(--section);max-width:1600px;margin-inline:auto}
+.sec + .sec{padding-top:0}
+
+/* join (form) */
+.join{border-top:1px solid var(--line);padding-top:clamp(96px,10vw,160px)}
+.join__title{grid-column:1/7}
+.join__title p{margin-top:28px;max-width:340px}
+.join__form{grid-column:8/13}
+.form{display:grid;gap:28px}
+.field{position:relative;display:grid}
+.field label{font:500 .6875rem/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--fg-2)}
+.field input{width:100%;height:48px;padding:8px 0;background:transparent;border:0;border-bottom:1px solid var(--line-2);border-radius:0;color:var(--fg);font:400 1rem/1.3 var(--sans);caret-color:var(--fg);transition:border-color .4s}
+.field input:hover{border-bottom-color:rgba(238,234,228,.5)}
+.field input:focus{outline:none;border-bottom-color:var(--fg)}
+.field input:-webkit-autofill{-webkit-text-fill-color:var(--fg);-webkit-box-shadow:0 0 0 100px var(--bg) inset;transition:background-color 9999s}
+.field[data-invalid] input{border-bottom-color:var(--error)}
+.field__err{margin-top:8px;font-size:.8125rem;line-height:1.4;color:var(--error)}
+.field__err:empty{display:none}
+.form .btn{margin-top:12px;width:100%}
+.form__status{font-size:.875rem;color:var(--error)}
+.form__status:empty{display:none}
+.form__legal{font-size:.75rem;line-height:1.6;color:var(--fg-3)}
+.form__legal a{text-decoration:underline;text-underline-offset:3px;color:var(--fg-2)}
+
+/* why */
+.why{text-align:center}
+.why__q{font-size:clamp(1.25rem,1.8vw,1.5rem);line-height:1.2;color:var(--fg-2)}
+.why__statement{max-width:16ch;margin:0 auto;font:400 clamp(2.75rem,6vw,5.75rem)/.98 var(--display);letter-spacing:-.015em;text-wrap:balance}
+.why__statement span{color:var(--fg-3)}
+.rows{margin-top:clamp(96px,10vw,160px);text-align:left;border-top:1px solid var(--line)}
+.row{padding-block:clamp(28px,3vw,40px);border-bottom:1px solid var(--line);align-items:baseline}
+.row h3{grid-column:1/7;font:400 clamp(1.875rem,3vw,2.75rem)/1.05 var(--display);letter-spacing:-.01em;transition:transform .7s var(--ease)}
+.row p{grid-column:8/13;max-width:380px;font-size:.875rem;color:var(--fg-2)}
+.row:hover h3{transform:translateX(10px)}
+
+/* agenda */
+.agenda__head{align-items:end}
+.agenda__head .h2{grid-column:1/8}
+.agenda__head div{grid-column:9/13;display:grid;gap:12px}
+.cards{margin-top:clamp(72px,8vw,120px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,20px)}
+.card{display:grid;gap:20px;align-content:start;padding:20px 20px 28px;background:var(--bg-2)}
+.card .slot{--r:4/5}
+.card:hover .slot img{transform:scale(1.04)}
+.card h3{font:400 .9375rem/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.card p{margin-top:8px;font-size:.875rem;line-height:1.6;color:var(--fg-2)}
+.card p.card__deal{margin-top:14px;font:italic 400 1.1875rem/1.3 var(--serif);color:var(--fg)}
+.cards__more{grid-column:1/-1;display:flex;justify-content:center;padding-top:clamp(32px,4vw,56px)}
+.note{max-width:56ch;margin:clamp(72px,8vw,112px) auto 0;text-align:center;font-size:1.125rem;line-height:1.5;color:var(--fg-3)}
+
+/* essence */
+.essence{align-items:start}
+.essence__side{grid-column:1/6}
+.essence__side blockquote{margin:32px 0 0;max-width:22ch;font:italic 400 clamp(1.25rem,1.8vw,1.625rem)/1.3 var(--serif);color:var(--fg-2)}
+.essence__main{grid-column:7/13;padding-top:.6em}
+.essence__lead{max-width:30ch;font:400 clamp(1.625rem,2.5vw,2.375rem)/1.18 var(--display);letter-spacing:-.005em;text-wrap:pretty}
+.essence__text{max-width:480px;margin-top:clamp(40px,4vw,56px);padding-top:clamp(28px,3vw,40px);border-top:1px solid var(--line)}
+.essence__text p{margin-bottom:18px;font-size:.9375rem;color:var(--fg-2)}
+.essence__close{margin-top:clamp(72px,8vw,120px);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:24px;padding-top:32px;border-top:1px solid var(--line)}
+.essence__close p{font-size:clamp(1.5rem,2.6vw,2.25rem);line-height:1.1}
+
+/* final */
+.final__copy{grid-column:1/7}
+.final__copy > p{margin-top:28px;max-width:400px}
+.final__media{grid-column:8/13;--r:2/3;align-self:start}
+.count{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:48px 0 44px;padding:20px 0;border-block:1px solid var(--line)}
+.count[hidden]{display:none}
+.count b{font:400 2.25rem/1 var(--display);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+
+/* faq */
+.faq .h2{grid-column:1/6;align-self:start;position:sticky;top:48px}
+.faq__list{grid-column:7/13;border-top:1px solid var(--line)}
+.qa{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;cursor:pointer;font:400 clamp(1.375rem,2vw,1.625rem)/1.25 var(--display);transition:color .3s}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{color:#fff}
+.qa__i{position:relative;width:14px;height:14px;flex:none;color:var(--fg-2)}
+.qa__i::before,.qa__i::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:currentColor;transition:transform .5s var(--ease)}
+.qa__i::after{transform:rotate(90deg)}
+.qa[open] .qa__i::after{transform:rotate(0)}
+.qa__a{padding:0 0 28px;max-width:52ch;font-size:.9375rem;color:var(--fg-2)}
+@supports (interpolate-size:allow-keywords){
+  :root{interpolate-size:allow-keywords}
+  .qa::details-content{block-size:0;overflow:hidden;transition:block-size .5s var(--ease),content-visibility .5s allow-discrete}
+  .qa[open]::details-content{block-size:auto}
+}
+
+/* footer */
+.foot{padding-top:clamp(96px,10vw,152px);border-top:1px solid var(--line)}
+.foot__top{align-items:start}
+.foot__top > p{grid-column:1/6;max-width:360px}
+.foot__links{grid-column:1/-1;display:flex;justify-content:flex-end;gap:clamp(24px,4vw,64px)}
+.foot__links a{color:var(--fg-2);transition:color .3s}
+.foot__links a:hover{color:var(--fg)}
+.wordmark{margin:clamp(56px,6vw,96px) 0 0;font:400 24vw/1 var(--display);letter-spacing:-.02em;white-space:nowrap;text-align:center;overflow:hidden;padding-top:.06em}
+.wordmark span{display:inline-block}
+.foot__bar{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(24px,3vw,40px);padding-block:20px calc(20px + env(safe-area-inset-bottom));border-top:1px solid var(--line);color:var(--fg-3)}
+
+/* mobile dock */
+.dock{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;transform:translateY(160%);transition:transform .6s var(--ease)}
+.dock.is-on{transform:none}
+.dock .btn{width:100%}
+
+/* motion */
+@media (prefers-reduced-motion:no-preference){
+  .js .hero__title .ln > span{transform:translateY(105%);animation:line-up 1.3s var(--ease) forwards;animation-delay:calc(.15s + var(--i,0) * .12s)}
+  @keyframes line-up{to{transform:none}}
+  .js .hero__sub,.js .hero__foot,.js .top{opacity:0;animation:fade 1.2s var(--ease) .75s forwards}
+  @keyframes fade{to{opacity:1}}
+  .js .hero__media{animation:settle 2.2s var(--ease) both}
+  @keyframes settle{from{opacity:0;transform:scale(1.06)}}
+  .js .rv{opacity:0;transform:translateY(32px);transition:opacity 1.2s var(--ease),transform 1.4s var(--ease);transition-delay:var(--d,0s)}
+  .js .rv.is-in{opacity:1;transform:none}
+  .js .wordmark span{transform:translateY(100%);transition:transform 1.6s var(--ease)}
+  .js .wordmark.is-in span{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+
+/* responsive */
+@media (max-width:1023px){
+  .top nav:first-child a:nth-child(2),.top nav:last-child a:first-child{display:none}
+  .join__title,.join__form,.row h3,.row p,.agenda__head .h2,.agenda__head div,.essence__side,.essence__main,.final__copy,.final__media,.faq .h2,.faq__list,.foot__top > p,.foot__links{grid-column:1/-1}
+  .join__form,.agenda__head div,.essence__main,.final__media,.faq__list,.foot__links{margin-top:48px}
+  .row p{margin-top:12px}
+  .faq .h2{position:static}
+  .foot__links{justify-content:flex-start}
+  .cards{grid-template-columns:1fr 1fr}
+}
+@media (max-width:767px){
+  .top nav{display:none}
+  .top__row{grid-template-columns:1fr}
+  .hero{min-height:max(100svh,640px);padding-bottom:40px;display:flex;flex-direction:column}
+  .hero__title{padding-top:120px;font-size:clamp(3.5rem,17vw,6rem)}
+  .hero__media img{object-position:50% 70%}
+  .hero__foot{position:static;display:grid;gap:24px;margin-top:auto;padding:40px var(--gutter) 0}
+  .hero__foot p{color:var(--fg)}
+  .hero__foot .link{justify-self:start}
+  .cards{grid-template-columns:1fr}
+  .wordmark{font-size:23vw}
+  .foot__links{flex-wrap:wrap;gap:20px 32px}
+}
+@media (min-width:1024px){.dock{display:none}}
+
+/* exportação: rótulos "Imagem 0X" ocultos no site publicado */
+.slot__hint{display:none}
+</style>
+</head>
+<body>
+<a class="skip" href="#form-hero">Pular para o cadastro</a>
+
+<header class="top">
+  <div class="wrap top__row">
+    <nav class="label" aria-label="Seções">
+      <a href="#entrar">Lista VIP</a>
+      <a href="#o-que-vem">O que vem</a>
+    </nav>
+    <!-- Logo: se preferir, troque por <img src="URL-DO-LOGO" alt="Mariá Head & Hair Spa" height="24"> -->
+    <a class="logo" href="#topo" aria-label="Mariá Head & Hair Spa, Black Mariá">
+      <span class="logo__word">MARIÁ</span>
+      <span class="logo__sub it">Black Mariá</span>
+    </a>
+    <nav class="label" aria-label="Mais">
+      <a href="#duvidas">Dúvidas</a>
+      <a href="https://www.instagram.com/mariaspa.oficial/" data-link="instagram" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <!-- IMAGEM 01 · Hero em tela cheia
+         srcset (desktop): versão HORIZONTAL 2400×1350 (16:9)
+         src    (celular): versão VERTICAL 1080×1920 (9:16)
+         Se tiver só uma versão, cole a mesma URL nos dois. -->
+    <figure class="slot hero__media">
+      <picture>
+        <source media="(min-width: 768px)" srcset="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-01a-hero-desktop.webp">
+        <img src="" alt="Shampoo Mariá sobre veludo preto, em luz baixa" fetchpriority="high">
+      </picture>
+      <figcaption class="slot__hint" aria-hidden="true">Imagem 01</figcaption>
+    </figure>
+    <div class="wrap">
+      <h1 class="hero__title display" id="hero-title">
+        <span class="ln" style="--i:0"><span>As melhores</span></span>
+        <span class="ln ln--split" style="--i:1"><span><span>condições</span> <span>do ano</span></span></span>
+        <span class="hero__sub">chegam primeiro para você</span>
+      </h1>
+    </div>
+    <div class="hero__foot">
+      <p>Cadastre-se para receber ofertas exclusivas e ter acesso antecipado à nossa seleção especial de produtos e rituais.</p>
+      <a class="link" href="#entrar">Quero meu acesso antecipado <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+    </div>
+  </section>
+
+  <!-- LISTA VIP (topo) -->
+  <section class="wrap sec join" id="entrar" aria-labelledby="join-title">
+    <div class="grid">
+      <div class="join__title rv">
+        <h2 class="h2" id="join-title">Entre para a<br>lista VIP</h2>
+      </div>
+      <div class="join__form rv" style="--d:.1s">
+        <form class="form" id="form-hero" data-vip-form novalidate aria-labelledby="join-title">
+          <div class="field">
+            <label for="hero-name">Nome</label>
+            <input id="hero-name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="hero-name-err">
+            <p class="field__err" id="hero-name-err"></p>
+          </div>
+          <div class="field">
+            <label for="hero-email">E-mail</label>
+            <input id="hero-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="hero-email-err">
+            <p class="field__err" id="hero-email-err"></p>
+          </div>
+          <div class="field">
+            <label for="hero-phone">WhatsApp</label>
+            <input id="hero-phone" name="mobile_phone" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="(11) 91234-5678" required aria-describedby="hero-phone-err" data-phone>
+            <p class="field__err" id="hero-phone-err"></p>
+          </div>
+          <button class="btn" type="submit"><span class="btn__txt">Quero meu acesso antecipado</span><span class="btn__ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+          <p class="form__status" role="alert"></p>
+          <p class="form__legal">Ao se cadastrar, você aceita receber as comunicações da Black Mariá por e-mail e WhatsApp e pode sair da lista quando quiser. <a href="https://mariaspa.com.br/pages/politica-de-privacidade" target="_blank" rel="noopener" data-privacy>Política de privacidade</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE SE CADASTRAR -->
+  <section class="wrap sec why" aria-labelledby="why-title">
+    <h2 class="why__statement rv" id="why-title">Por que se <span>cadastrar?</span></h2>
+    <div class="rows">
+      <div class="grid row rv">
+        <h3>Acesso antecipado</h3>
+        <p>Compre com as condições especiais de Black Friday até 24h antes de todo mundo.</p>
+      </div>
+      <div class="grid row rv">
+        <h3>Saiba antes</h3>
+        <p>Receba avisos antecipados para se preparar para as ofertas da Black Mariá.</p>
+      </div>
+      <div class="grid row rv">
+        <h3>Ofertas no seu e-mail</h3>
+        <p>Acompanhe as novidades e receba comunicações com ofertas selecionadas para você.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VEM POR AÍ -->
+  <section class="wrap sec" id="o-que-vem" aria-labelledby="agenda-title">
+    <div class="grid agenda__head">
+      <h2 class="h2 rv" id="agenda-title">O que vem<br>por aí</h2>
+      <div class="rv" style="--d:.08s">
+        <p class="small">Um mês de oportunidades para cuidar de você e dos seus cabelos.</p>
+        <p class="small">Durante novembro, a Black Mariá terá as seguintes etapas especiais:</p>
+      </div>
+    </div>
+
+
+    <div class="cards">
+      <article class="card rv">
+        <!-- IMAGEM 02 · Combo de cuidados capilares · 1200×1500 (4:5) -->
+        <figure class="slot"><img src="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-02-combos.webp" alt="Combo de cuidados capilares Mariá para rotina de Scalp Care" loading="lazy"><figcaption class="slot__hint" aria-hidden="true">Imagem 02</figcaption></figure>
+        <div>
+          <h3>Combos de cuidados capilares</h3>
+          <p>Combinações de produtos para complementar sua rotina de Scalp Care e cuidado com os fios.</p>
+          <p class="card__deal">Até 30% OFF durante todo o mês</p>
+        </div>
+      </article>
+      <article class="card rv" style="--d:.1s">
+        <!-- IMAGEM 03 · Ritual no Mariá Head Spa · foto real · 4:5 ou 2:3 vertical -->
+        <figure class="slot"><img src="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-03-rituais.webp" alt="Ritual de Head Spa no Mariá, massagem no couro cabeludo" loading="lazy"><figcaption class="slot__hint" aria-hidden="true">Imagem 03</figcaption></figure>
+        <div>
+          <h3>Combos de rituais no Mariá Head Spa</h3>
+          <p>Uma seleção especial para levar a experiência de cuidado Mariá para sua rotina.</p>
+          <p class="card__deal">Compre e ganhe um brinde exclusivo durante todo o mês</p>
+        </div>
+      </article>
+      <article class="card rv">
+        <!-- IMAGEM 04 · Acessórios e produtos selecionados · 1200×1500 (4:5) -->
+        <figure class="slot"><img src="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-04-acessorios.webp" alt="Acessórios e produtos selecionados Mariá" loading="lazy"><figcaption class="slot__hint" aria-hidden="true">Imagem 04</figcaption></figure>
+        <div>
+          <h3>Acessórios e produtos selecionados</h3>
+          <p>No dia da Black Friday, uma seleção especial completa as oportunidades da campanha.</p>
+          <p class="card__deal">Produtos com mais de 30% OFF somente no dia 27/11</p>
+        </div>
+      </article>
+      <div class="cards__more rv"><a class="link" href="#lista-vip">Quero meu acesso antecipado <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a></div>
+    </div>
+
+    <p class="note it">A seleção de produtos e as condições serão divulgadas nos canais oficiais da Mariá. A disponibilidade pode variar conforme cada oferta.</p>
+  </section>
+
+  <!-- A ESSÊNCIA MARIÁ -->
+  <section class="wrap sec" id="essencia" aria-labelledby="essence-title">
+    <div class="grid essence">
+      <div class="essence__side rv">
+        <h2 class="h2" id="essence-title">A essência<br>Mariá</h2>
+        <blockquote>O que agora é tendência, para nós sempre foi prioridade.</blockquote>
+      </div>
+      <div class="essence__main rv" style="--d:.08s">
+        <p class="essence__lead">Pioneira em Head Spa no Brasil, o Mariá trouxe um novo olhar para o cuidado capilar: da experiência de bem-estar dos rituais à atenção especializada ao couro cabeludo.</p>
+        <div class="essence__text">
+          <p>Desenvolvida com a expertise de especialistas, nossa abordagem de Scalp Care considera as necessidades da raiz e a importância de cuidar do couro cabeludo com fórmulas e cuidados direcionados, que ajudam a manter a limpeza, o equilíbrio da oleosidade e uma rotina capilar bem orientada.</p>
+          <p>Nesta Black, descubra os cuidados que fazem parte da essência Mariá, em condições especiais.</p>
+        </div>
+      </div>
+    </div>
+    <div class="essence__close rv">
+      <p class="it">Seu próximo cuidado pode começar aqui.</p>
+      <a class="link" href="#lista-vip">Entrar para a lista VIP <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+    </div>
+  </section>
+
+  <!-- LISTA VIP (final) -->
+  <section class="wrap sec" id="lista-vip" aria-labelledby="final-title">
+    <div class="grid">
+      <div class="final__copy">
+        <h2 class="h2 rv" id="final-title">Entre para a<br>lista VIP</h2>
+        <p class="small rv" style="--d:.06s">e receba em primeira mão as novidades, as ofertas personalizadas e o acesso antecipado à seleção especial do Mariá.</p>
+
+        <div class="count" data-countdown hidden>
+          <span class="label muted">Acesso antecipado VIP em</span>
+          <b><span data-cd="d">00</span>d <span data-cd="h">00</span>h <span data-cd="m">00</span>m</b>
+        </div>
+
+        <form class="form" id="form-final" data-vip-form novalidate aria-labelledby="final-title">
+          <div class="field">
+            <label for="final-name">Nome</label>
+            <input id="final-name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="final-name-err">
+            <p class="field__err" id="final-name-err"></p>
+          </div>
+          <div class="field">
+            <label for="final-email">E-mail</label>
+            <input id="final-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="final-email-err">
+            <p class="field__err" id="final-email-err"></p>
+          </div>
+          <div class="field">
+            <label for="final-phone">WhatsApp</label>
+            <input id="final-phone" name="mobile_phone" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="(11) 91234-5678" required aria-describedby="final-phone-err" data-phone>
+            <p class="field__err" id="final-phone-err"></p>
+          </div>
+          <button class="btn" type="submit"><span class="btn__txt">Quero meu acesso antecipado</span><span class="btn__ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></button>
+          <p class="form__status" role="alert"></p>
+          <p class="form__legal">Ao se cadastrar, você aceita receber as comunicações da Black Mariá por e-mail e WhatsApp e pode sair da lista quando quiser. <a href="https://mariaspa.com.br/pages/politica-de-privacidade" target="_blank" rel="noopener" data-privacy>Política de privacidade</a>.</p>
+        </form>
+      </div>
+      <!-- IMAGEM 06 · Detalhe da escova · 1024×1536 (2:3) -->
+      <figure class="slot final__media rv" style="--d:.1s"><img src="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-06-escova.webp" alt="Detalhe da escova Nutri Brush Mariá em luz baixa" loading="lazy"><figcaption class="slot__hint" aria-hidden="true">Imagem 06</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap sec faq" id="duvidas" aria-labelledby="faq-title">
+    <div class="grid">
+      <h2 class="h2 rv" id="faq-title">Dúvidas<br>frequentes</h2>
+      <div class="faq__list">
+        <details class="qa"><summary>Quando acontece a Black Mariá?<span class="qa__i" aria-hidden="true"></span></summary><div class="qa__a"><p>Durante todo o mês de novembro, com combos e produtos selecionados ao longo do mês e uma ação especial de Black Friday no dia 27 de novembro.</p></div></details>
+        <details class="qa"><summary>Quais ofertas estarão disponíveis?<span class="qa__i" aria-hidden="true"></span></summary><div class="qa__a"><p>A campanha terá combos de produtos, combos de rituais com brindes e uma seleção de acessórios e produtos individuais. As condições serão divulgadas durante a campanha.</p></div></details>
+        <details class="qa"><summary>Quais são as vantagens de entrar para a lista VIP?<span class="qa__i" aria-hidden="true"></span></summary><div class="qa__a"><p>Você recebe avisos antecipados, ofertas personalizadas por e-mail e acesso antecipado à promoção especial de Black Friday.</p></div></details>
+        <details class="qa"><summary>Preciso comprar para me cadastrar?<span class="qa__i" aria-hidden="true"></span></summary><div class="qa__a"><p>Não. A inscrição é gratuita e permite receber as comunicações da Black Mariá.</p></div></details>
+        <details class="qa"><summary>Como vou receber as ofertas?<span class="qa__i" aria-hidden="true"></span></summary><div class="qa__a"><p>As comunicações serão enviadas para o e-mail e WhatsApp informado no cadastro. Por isso, confira se o endereço está correto e acompanhe sua caixa de entrada.</p></div></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap grid foot__top">
+    <nav class="foot__links label" aria-label="Canais oficiais">
+      <a href="https://www.instagram.com/mariaspa.oficial/" data-link="instagram" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://mariaspa.com.br/" data-link="site" target="_blank" rel="noopener">Loja</a>
+      <a href="https://mariaspa.com.br/pages/politica-de-privacidade" target="_blank" rel="noopener" data-privacy>Privacidade</a>
+    </nav>
+  </div>
+  <p class="wordmark" data-wordmark aria-hidden="true"><span>Black Mariá</span></p>
+  <div class="wrap foot__bar label">
+    <span>© 2026 Mariá Head &amp; Hair Spa</span>
+  </div>
+</footer>
+
+<div class="dock" data-dock>
+  <a class="btn" href="#lista-vip"><span class="btn__txt">Quero meu acesso antecipado</span><span class="btn__ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
+</div>
+
+<script>
+/* =========================================================
+   CONFIGURAÇÃO — edite só este bloco
+   ========================================================= */
+var CONFIG = {
+  // OBRIGATÓRIO antes de divulgar: token preenchido OU código de monitoramento do RD na página.
+  // Token PÚBLICO do RD Station Marketing (Configurações > Integrações > Tokens/Chaves de API).
+  rdPublicToken: "",
+  // Identificador da conversão que aparece no RD.
+  conversionIdentifier: "black-maria-2026-lista-vip",
+  // URL da página de confirmação.
+  thankYouUrl: "obrigado.html",
+  // Links oficiais
+  instagramUrl: "https://www.instagram.com/mariaspa.oficial/",
+  siteUrl: "https://mariaspa.com.br/",
+  privacyUrl: "https://mariaspa.com.br/pages/politica-de-privacidade"
+};
+</script>
+<script>
+(function(){
+  "use strict";
+  document.documentElement.classList.add("js");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Links */
+  document.querySelectorAll('[data-link="instagram"]').forEach(function(a){ a.href = CONFIG.instagramUrl; });
+  document.querySelectorAll('[data-link="site"]').forEach(function(a){ a.href = CONFIG.siteUrl; });
+  document.querySelectorAll("[data-privacy]").forEach(function(a){ a.href = CONFIG.privacyUrl; if (CONFIG.privacyUrl !== "#") { a.target = "_blank"; a.rel = "noopener"; } });
+
+  /* Revelações no scroll */
+  var targets = document.querySelectorAll(".rv,[data-wordmark]");
+  if ("IntersectionObserver" in window && !reduce) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.05 });
+    targets.forEach(function(el){ io.observe(el); });
+  } else {
+    targets.forEach(function(el){ el.classList.add("is-in"); });
+  }
+
+  /* Contagem regressiva até o acesso antecipado VIP, 26/11 (horário de Brasília) */
+  var cd = document.querySelector("[data-countdown]");
+  if (cd) {
+    var vip = Date.parse("2026-11-26T00:00:00-03:00");
+    var out = { d: cd.querySelector('[data-cd="d"]'), h: cd.querySelector('[data-cd="h"]'), m: cd.querySelector('[data-cd="m"]') };
+    function pad(n){ return (n < 10 ? "0" : "") + n; }
+    function tick(){
+      var diff = vip - Date.now();
+      if (diff <= 0) { cd.hidden = true; return; }
+      out.d.textContent = pad(Math.floor(diff / 864e5));
+      out.h.textContent = pad(Math.floor(diff % 864e5 / 36e5));
+      out.m.textContent = pad(Math.floor(diff % 36e5 / 6e4));
+      cd.hidden = false;
+    }
+    tick(); setInterval(tick, 30000);
+  }
+
+  /* Botão fixo no celular: aparece fora das áreas de formulário */
+  var dock = document.querySelector("[data-dock]");
+  if (dock && "IntersectionObserver" in window) {
+    var visible = new Set();
+    var watch = [document.querySelector(".hero"), document.getElementById("entrar"), document.getElementById("lista-vip")];
+    var dio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) visible.add(e.target); else visible.delete(e.target); });
+      dock.classList.toggle("is-on", visible.size === 0);
+    }, { threshold: 0 });
+    watch.forEach(function(el){ if (el) dio.observe(el); });
+  }
+
+  /* UTMs */
+  var params = new URLSearchParams(location.search);
+  var utm = {
+    traffic_source: params.get("utm_source") || undefined,
+    traffic_medium: params.get("utm_medium") || undefined,
+    traffic_campaign: params.get("utm_campaign") || undefined,
+    traffic_value: params.get("utm_term") || params.get("utm_content") || undefined
+  };
+
+  /* Máscara de WhatsApp */
+  function digits(v){ return (v || "").replace(/\D/g, "").replace(/^55(?=\d{10,11}$)/, "").slice(0, 11); }
+  function maskPhone(v){
+    var d = digits(v);
+    if (d.length <= 2) return d.length ? "(" + d : "";
+    if (d.length <= 6) return "(" + d.slice(0,2) + ") " + d.slice(2);
+    if (d.length <= 10) return "(" + d.slice(0,2) + ") " + d.slice(2,6) + "-" + d.slice(6);
+    return "(" + d.slice(0,2) + ") " + d.slice(2,7) + "-" + d.slice(7);
+  }
+  document.querySelectorAll("[data-phone]").forEach(function(inp){
+    inp.addEventListener("input", function(){ inp.value = maskPhone(inp.value); });
+  });
+
+  /* Validação */
+  var rules = {
+    name: function(v){ return v.trim().length >= 2 ? "" : "Digite seu nome."; },
+    email: function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? "" : "Digite um e-mail válido, como voce@email.com."; },
+    mobile_phone: function(v){ return digits(v).length >= 10 ? "" : "Digite seu WhatsApp com DDD, como (11) 91234-5678."; }
+  };
+  function check(inp){
+    var rule = rules[inp.name]; if (!rule) return true;
+    var msg = rule(inp.value), field = inp.closest(".field"), err = document.getElementById(inp.getAttribute("aria-describedby"));
+    if (msg) { field.setAttribute("data-invalid", ""); inp.setAttribute("aria-invalid", "true"); }
+    else { field.removeAttribute("data-invalid"); inp.removeAttribute("aria-invalid"); }
+    if (err) err.textContent = msg;
+    return !msg;
+  }
+
+  function sendToRD(data){
+    var payload = {
+      conversion_identifier: CONFIG.conversionIdentifier,
+      name: data.name, email: data.email,
+      mobile_phone: "+55 " + data.mobile_phone,
+      available_for_mailing: true,
+      legal_bases: [{ category: "communications", type: "consent", status: "granted" }]
+    };
+    Object.keys(utm).forEach(function(k){ if (utm[k]) payload[k] = utm[k]; });
+    return fetch("https://api.rd.services/platform/conversions?api_key=" + encodeURIComponent(CONFIG.rdPublicToken), {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ event_type: "CONVERSION", event_family: "CDP", payload: payload })
+    }).then(function(r){ if (!r.ok) throw new Error("RD " + r.status); });
+  }
+  function wait(ms){ return new Promise(function(r){ setTimeout(r, ms); }); }
+
+  document.querySelectorAll("[data-vip-form]").forEach(function(form){
+    var inputs = form.querySelectorAll("input[name]");
+    var btn = form.querySelector("button[type=submit]");
+    var status = form.querySelector(".form__status");
+    inputs.forEach(function(inp){
+      inp.addEventListener("blur", function(){ if (inp.value) check(inp); });
+      inp.addEventListener("input", function(){ if (inp.closest(".field").hasAttribute("data-invalid")) check(inp); });
+    });
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      status.textContent = "";
+      var firstBad = null;
+      inputs.forEach(function(inp){ if (!check(inp) && !firstBad) firstBad = inp; });
+      if (firstBad) { firstBad.focus(); return; }
+      var data = { name: form.name.value.trim(), email: form.email.value.trim().toLowerCase(), mobile_phone: maskPhone(form.mobile_phone.value) };
+      var hasTracking = !!document.querySelector('script[src*="d335luupugsy2"],script[src*="rdstation"],script[src*="rd.services"]');
+      if (!CONFIG.rdPublicToken && !hasTracking) {
+        console.warn("[Black Mariá] Formulário sem conexão com o RD Station: preencha CONFIG.rdPublicToken ou instale o código de monitoramento.");
+        status.textContent = "O cadastro está temporariamente indisponível. Tente de novo em alguns minutos.";
+        return;
+      }
+      btn.setAttribute("aria-busy", "true"); btn.disabled = true;
+      var job = CONFIG.rdPublicToken ? sendToRD(data) : wait(1200);
+      job.then(function(){
+        try { sessionStorage.setItem("bm_first_name", data.name.split(/\s+/)[0]); } catch (err) {}
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: "black_maria_lista_vip", form_id: form.id });
+        window.location.href = CONFIG.thankYouUrl;
+      }).catch(function(){
+        btn.removeAttribute("aria-busy"); btn.disabled = false;
+        status.textContent = "Não conseguimos concluir seu cadastro agora. Confira sua conexão e tente de novo em instantes.";
+      });
+    });
+  });
+})();
+</script>
+<!-- Código de monitoramento do RD Station: cole aqui, antes do </body>, se a LP não estiver hospedada dentro do RD. -->
+</body>
+</html>
