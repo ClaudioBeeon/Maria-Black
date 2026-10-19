@@ -430,7 +430,7 @@ html{scrollbar-color:#2a2827 var(--bg)}
 
         <div class="count" data-countdown hidden>
           <span class="label muted">Acesso antecipado VIP em</span>
-          <b><span data-cd="d">00</span>d <span data-cd="h">00</span>h <span data-cd="m">00</span>m</b>
+          <b><span data-cd="d">00</span>d <span data-cd="h">00</span>h <span data-cd="m">00</span>m <span data-cd="s">00</span>s</b>
         </div>
 
         <form class="form" id="form-final" data-vip-form novalidate aria-labelledby="final-title">
@@ -536,7 +536,7 @@ var CONFIG = {
   var cd = document.querySelector("[data-countdown]");
   if (cd) {
     var vip = Date.parse("2026-11-26T00:00:00-03:00");
-    var out = { d: cd.querySelector('[data-cd="d"]'), h: cd.querySelector('[data-cd="h"]'), m: cd.querySelector('[data-cd="m"]') };
+    var out = { d: cd.querySelector('[data-cd="d"]'), h: cd.querySelector('[data-cd="h"]'), m: cd.querySelector('[data-cd="m"]'), s: cd.querySelector('[data-cd="s"]') };
     function pad(n){ return (n < 10 ? "0" : "") + n; }
     function tick(){
       var diff = vip - Date.now();
@@ -544,9 +544,10 @@ var CONFIG = {
       out.d.textContent = pad(Math.floor(diff / 864e5));
       out.h.textContent = pad(Math.floor(diff % 864e5 / 36e5));
       out.m.textContent = pad(Math.floor(diff % 36e5 / 6e4));
+      out.s.textContent = pad(Math.floor(diff % 6e4 / 1e3));
       cd.hidden = false;
     }
-    tick(); setInterval(tick, 30000);
+    tick(); var cdTimer = setInterval(function(){ tick(); if (cd.hidden) clearInterval(cdTimer); }, 1000);
   }
 
   /* Botão fixo no celular: aparece fora das áreas de formulário */
