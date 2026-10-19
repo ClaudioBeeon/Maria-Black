@@ -10,7 +10,7 @@
 <meta property="og:description" content="Cadastre-se para receber ofertas exclusivas e ter acesso antecipado à nossa seleção especial de produtos e rituais.">
 <meta property="og:type" content="website">
 <!-- og:image: cole aqui a URL da imagem de compartilhamento (1200×630) -->
-<meta property="og:image" content="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-01a-hero-desktop.webp">
+<meta property="og:image" content="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/Maria_BLACK.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
   --line:rgba(238,234,228,.12);
   --line-2:rgba(238,234,228,.3);
   --gold:#c9a663;
+  --gold-hi:#dcbd7e;
   --error:#eba597;
   --sans:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --display:"Instrument Serif","Times New Roman",serif;
@@ -66,13 +67,14 @@ html{scrollbar-color:#2a2827 var(--bg)}
 .link{display:inline-flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--line-2);font:500 .6875rem/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;transition:border-color .4s,gap .4s var(--ease)}
 .link svg{width:12px;height:12px}
 .link:hover{border-color:var(--fg);gap:14px}
-.btn{display:inline-flex;align-items:stretch;justify-content:space-between;min-height:56px;border:0;padding:0;background:var(--fg);color:var(--bg);font:500 .6875rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-align:left;cursor:pointer;transition:background-color .4s var(--ease)}
-.btn__txt{display:flex;align-items:center;padding:0 24px}
-.btn__ico{display:grid;place-items:center;width:56px;border-left:1px solid rgba(10,10,10,.14);flex:none}
+.btn{display:inline-flex;align-items:stretch;justify-content:space-between;min-height:60px;border:0;padding:0;background:var(--gold);color:var(--bg);font:600 .75rem/1 var(--sans);letter-spacing:.14em;box-shadow:0 18px 40px -18px rgba(201,166,99,.55);text-transform:uppercase;text-align:left;cursor:pointer;transition:background-color .4s var(--ease)}
+.btn__txt{display:flex;align-items:center;padding:0 28px}
+.btn__ico{display:grid;place-items:center;width:60px;border-left:1px solid rgba(10,10,10,.18);flex:none}
 .btn__ico svg{width:16px;height:16px;transition:transform .5s var(--ease)}
-.btn:hover{background:#fff}
+.btn:hover{background:var(--gold-hi)}
 .btn:hover .btn__ico svg{transform:translateX(4px)}
 .btn--line{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--line-2)}
+.btn--center{align-self:center;min-width:min(100%,380px)}
 .btn--line .btn__ico{border-left-color:var(--line-2)}
 .btn--line:hover{background:transparent;box-shadow:inset 0 0 0 1px var(--fg)}
 .btn[aria-busy="true"]{pointer-events:none;opacity:.6}
@@ -86,33 +88,35 @@ html{scrollbar-color:#2a2827 var(--bg)}
 /* fotos coloridas do spa em P&B para conversar com a página; remova "slot--mono" para voltar à cor */
 .slot--mono img{filter:grayscale(1) contrast(1.08) brightness(.78)}
 .slot > img[src=""],.slot > img:not([src]){display:none}
-@media (max-width:767px){.slot picture img[src=""]{display:none}}
+@media (max-width:767px){
+  .essence__photo{--r:3/2}.slot picture img[src=""]{display:none}}
 @media (min-width:768px){.slot picture:has(source[srcset=""]) img[src=""]{display:none}}
 
 /* header */
-.top{position:absolute;inset:0 0 auto;z-index:10;padding-top:28px}
+.top{position:absolute;inset:0 0 auto;z-index:10;padding-top:24px}
+.top nav{padding-top:22px}
 .top__row{display:grid;grid-template-columns:1fr auto 1fr;align-items:start}
 .top nav{display:flex;gap:clamp(20px,3vw,44px)}
 .top nav:last-child{justify-content:flex-end}
 .top nav a{color:var(--fg-2);transition:color .3s}
 .top nav a:hover{color:var(--fg)}
-.logo{display:grid;justify-items:center;gap:4px;text-align:center}
+.logo{display:grid;justify-items:center;gap:8px;text-align:center}
+.logo__img{display:block;width:auto;height:clamp(48px,5vw,64px)}
 .logo__word{font:400 .9375rem/1 var(--sans);letter-spacing:.42em;padding-left:.42em}
 .logo__sub{font-size:1rem;line-height:1;color:var(--fg-2)}
 
 /* hero */
-.hero{position:relative;min-height:max(100svh,760px);overflow:hidden;isolation:isolate}
-.hero__media{position:absolute;inset:0;z-index:-2;aspect-ratio:auto}
-.hero__media img{object-position:50% 62%}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(10,10,10,.7) 0%,rgba(10,10,10,0) 24%,rgba(10,10,10,0) 55%,rgba(10,10,10,.8) 85%,#0a0a0a 100%),linear-gradient(90deg,rgba(10,10,10,.5) 0%,rgba(10,10,10,0) 32%,rgba(10,10,10,0) 68%,rgba(10,10,10,.5) 100%)}
-.hero__title{padding-top:clamp(120px,17vh,168px);font-size:clamp(3.5rem,11.5vw,10rem)}
+.hero{position:relative;min-height:max(100svh,720px);display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:clamp(136px,17vh,168px);overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:22%;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(10,10,10,0),#0a0a0a)}
+.hero__inner{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center}
+.hero__title{font-size:clamp(2.75rem,5.6vw,5.5rem)}
 .hero__title .ln{display:block;overflow:hidden;padding:.16em 0 .2em;margin:-.16em 0 -.2em}
 .hero__title .ln > span{display:block}
-.hero__title .ln--split > span{display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:.3em}
-.hero__title .ln--split > span > span:last-child{margin-left:auto}
-.hero__sub{display:block;margin-top:22px;text-align:right;font:italic 400 clamp(1.25rem,2.1vw,1.875rem)/1.1 var(--serif);color:var(--fg-2);text-transform:none;letter-spacing:0}
-.hero__foot{position:absolute;left:max(var(--gutter),calc((100% - 1600px) / 2 + var(--gutter)));right:max(var(--gutter),calc((100% - 1600px) / 2 + var(--gutter)));bottom:clamp(32px,5vh,48px);display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
-.hero__foot p{max-width:300px;font-size:.875rem;line-height:1.7;color:var(--fg-2)}
+.hero__sub{display:block;margin-top:12px;font:italic 400 clamp(1.375rem,2.2vw,2rem)/1.1 var(--serif);color:var(--fg-2);letter-spacing:0}
+.hero__lede{max-width:440px;margin:22px auto 32px;font-size:.9375rem;line-height:1.7;color:var(--fg-2)}
+.hero__media{position:relative;z-index:1;width:min(1000px,90vw);aspect-ratio:3/2;margin:clamp(-110px,-7vw,-40px) auto 0;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 24%,#000 78%,transparent 100%),linear-gradient(90deg,transparent 0%,#000 16%,#000 84%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(180deg,transparent 0%,#000 24%,#000 78%,transparent 100%),linear-gradient(90deg,transparent 0%,#000 16%,#000 84%,transparent 100%);mask-composite:intersect}
+.hero__media img{display:block;width:100%;height:100%;object-fit:cover}
+.hero__media img[src=""]{display:none}
 
 /* section frame */
 .sec{padding-block:var(--section);max-width:1600px;margin-inline:auto}
@@ -172,7 +176,9 @@ html{scrollbar-color:#2a2827 var(--bg)}
 .essence__lead{max-width:30ch;font:400 clamp(1.625rem,2.5vw,2.375rem)/1.18 var(--display);letter-spacing:-.005em;text-wrap:pretty}
 .essence__text{max-width:480px;margin-top:clamp(40px,4vw,56px);padding-top:clamp(28px,3vw,40px);border-top:1px solid var(--line)}
 .essence__text p{margin-bottom:18px;font-size:.9375rem;color:var(--fg-2)}
-.essence__close{margin-top:clamp(72px,8vw,120px);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:24px;padding-top:32px;border-top:1px solid var(--line)}
+.essence__photo{--r:16/9;margin-top:clamp(72px,8vw,120px)}
+.essence__photo img{object-position:50% 55%}
+.essence__close{margin-top:clamp(72px,8vw,120px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px;padding-top:clamp(48px,5vw,72px);border-top:1px solid var(--line)}
 .essence__close p{font-size:clamp(1.5rem,2.6vw,2.25rem);line-height:1.1}
 
 /* final */
@@ -221,7 +227,7 @@ html{scrollbar-color:#2a2827 var(--bg)}
 @media (prefers-reduced-motion:no-preference){
   .js .hero__title .ln > span{transform:translateY(105%);animation:line-up 1.3s var(--ease) forwards;animation-delay:calc(.15s + var(--i,0) * .12s)}
   @keyframes line-up{to{transform:none}}
-  .js .hero__sub,.js .hero__foot,.js .top{opacity:0;animation:fade 1.2s var(--ease) .75s forwards}
+  .js .hero__sub,.js .hero__lede,.js .hero__inner .btn,.js .top{opacity:0;animation:fade 1.2s var(--ease) .7s forwards}
   @keyframes fade{to{opacity:1}}
   .js .hero__media{animation:settle 2.2s var(--ease) both}
   @keyframes settle{from{opacity:0;transform:scale(1.06)}}
@@ -247,20 +253,18 @@ html{scrollbar-color:#2a2827 var(--bg)}
 @media (max-width:767px){
   .top nav{display:none}
   .top__row{grid-template-columns:1fr}
-  .hero{min-height:max(100svh,640px);padding-bottom:40px;display:flex;flex-direction:column}
-  .hero__title{padding-top:120px;font-size:clamp(3.5rem,17vw,6rem)}
-  .hero__media img{object-position:50% 70%}
-  .hero__foot{position:static;display:grid;gap:24px;margin-top:auto;padding:40px var(--gutter) 0}
-  .hero__foot p{color:var(--fg)}
-  .hero__foot .link{justify-self:start}
+  .hero{min-height:0;padding-top:116px}
+  .hero__title{font-size:clamp(2.5rem,11.5vw,3.5rem)}
+  .hero__lede{margin:18px auto 28px;padding-inline:8px}
+  .hero__inner .btn{width:100%}
+  .btn{letter-spacing:.08em}
+  .btn__txt{padding:0 20px}
+  .hero__media{width:108vw;margin-top:-24px}
   .cards{grid-template-columns:1fr}
   .wordmark{font-size:23vw}
   .foot__links{flex-wrap:wrap;gap:20px 32px}
 }
 @media (min-width:1024px){.dock{display:none}}
-
-/* exportação: rótulos "Imagem 0X" ocultos no site publicado */
-.slot__hint{display:none}
 </style>
 </head>
 <body>
@@ -274,7 +278,7 @@ html{scrollbar-color:#2a2827 var(--bg)}
     </nav>
     <!-- Logo: se preferir, troque por <img src="URL-DO-LOGO" alt="Mariá Head & Hair Spa" height="24"> -->
     <a class="logo" href="#topo" aria-label="Mariá Head & Hair Spa, Black Mariá">
-      <span class="logo__word">MARIÁ</span>
+      <img class="logo__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAABSCAYAAAAinoSyAAAKt0lEQVR42u1d3XGjyBY+dvldbARmIhAbgZgIxESgdgSDIzCOYJgIjCNYOYLBESyKYHHVPt2He1EEcx90uuZMVzfQTSOBOKeKsixLpoGvvz7/ffPf//wLVyAFANQAkAHLYuTmCsCbAcCTvB5+pMuR2yu4hhR/HvhxMnjnJAIAVvh6z4+T1YY5SQ0A9/j6E/7OMj2JySGlHGqj3M2cde+JysDAnZYk5Fhp/r7B1bJaIngzxdvAcnkJ0AahxGKSwYRzN2Pg3itLEMvlQZsqLHtEZi0RqLXPZzVHnTfAmyBv0gcAhIyfixIJBe07qgPlEJXgWpk3U2Y3s+5lJESQrgHgDV/vAaA51wDuZnjDvirvsYvscrJHg6xmV1m3lGilUvnjnLOdBThIAW6ul43GYmXgMngnb6TlBiZmYfDOwjV2ROOAwcsyC/BGxEjLFLdYxY+QwQsTz9UFOPkPCzi5ZgBO/t2aHyGDd8rqwhrVBQG/J3Yw6zJ4J60uPJGc3RrfGwO8AgB+4qGeh4XBa+1dkMGHN6I6xCMYazkAvJDf75XzsExUphphyxFEH8iKlI19Mm8BADvD5GFh8IJLMGJHXjcEuDQZpxkJuKxP+11Bo7F883cTzF2QKsKjAiKfrNsGXGAvhrVtEuLPCAG76fG9d5IuWbqQ0d0E9dwVALxqImo+wBsgcLcdn2PmNd+/GJ9F3BOkJtngIX348plXcwRvDie32IFUBPsEb4AzfM0YBNv6swR/jnnvdni8Ee/SLMArcOBHRc81gbf2BNwjvr9VlrOls2tCALuy/L6uekLVdSOiD8fKebb4e2bIZ4EppURGAPA3vv5sUOhDAPiHjtsDcA84aRL45U+W4I1heYnliSFzD3rUopWkcqIeQGBCOf+r4m2aFPOGBKwPLZZoqNwsl2x/9YbHyPAJLLcSIkFw2KoDb6TUp/aYBlDgcyng5CrdEXZupgReaqB976gApkzYWDB6qVn2DqabsTCVYAt2qsCeHDBywUGIKsNXnFiFjmTuLlxCssalIe3BEjZ+QhNwW5chuP4eCruJAhYMbbwqOEU/twjmdArgLVC3ee8JptCCeYcCdwPXoxakCNp7sFcJ9hNYneRq/IIsXNKJdHehAe1w+U4sfILQw01mAu5zS2uh2rC8NjNWC4TlJPxAZttPMEBDAVzgpGwAzp+YkxLg9tU7w57RL2EA7kNHT6y6wy0HM4lyFXgtLxbAfUUPj9Qxa5huTvczPtvsElllAgC+ORhMfcAr8KHpgFtAd7O+NgNxyiwrcCX6G0lh1ZNlH+FUdS1mVEqVoZr5VWLi9ozAfXG09OMON5lQUhqlsfFnzx5mNX5eNXDmwrJrR5ZtZtpc8SjZ927iwFXTE5uewI0tQ8il4jpa40OuJ6bLppY+2Q8Een4lrsGaeB2C24kDty2nIdMA9+AAXDC4grIZs+w7AHzBCZhdmU9bTsTkdmQd5cVDUEDHvAX8HtIdAlwJ3qMmUSSckS57RNXgE96Ha22D1SCAk7FyGwq86T6CAj8VAyzWONt9RM0Kw/89l+chIn7ZlaVqkE3EL3vWTqFjgNcncEP4PSHnoFk6fUXN1HOdIyoXkIQUl/yCfMGNV3Kf4KXZWw+eupXHAPCjw4IWI22LpeqQwqMBJwMJW7BPN8yJHgxcPexnySuRvT57bLPfpnM+j8CIucEdt0EdNHMszpQMW+DS/pclcA9ICAGOYfHABfCTzxuTsKLwXEJjYsKHEfehCPEaVh3WfEmW7ApBGZIJJ2u7YscKBJkYk3NZEoySz5vCKWomM8POYTA8jLyBSo2AK1sALOuvnkY4/4HkGXD71hHASwsZH7vKNQa6RYYEH1ylIons58gyO5JkbGbZEcEbEVb4c+SbXZANVMoz63oNThaBk3M1AmAvmS+7OJ1X6qDfrzByM0Z4FjQ+2b2al8oyLnhDkkspFt7UOSS9C2QV7FoD0prkTVxi5WDwIttkCN6MjQiWOei8lG0TbqHPAjMIUkhHeEUCDwxclsmDNyFuomgiaYEsLK1qQ0yAmrCvkWUu4M0Jy7J6wAJz8jaEwC4clpnqvAxcFt5QhYWFwcvCMuPdgOYsGfwKC7MBzOCdjaRwSlw6jpxzzMJqA/jOPMsI+7IhzMwLc2p2l5O+AiwwrXxeH60/bf5HYNkN/dLMyxl3E2beAk75vM3AbtelxedrC/1RgLniuI8BFcOvxn42BldCytnBsYi11FRN14aulbVGLQlb2rUGSqHoIpm3HLAJSYg3zya9su5RAq+Ob9NRepO1LOsZKap8tkhMKkm1cOPYFehG47HIyN+fOybinmQDmrZL3cCpCiaFheq8WwTg3oG1V5aNOe4NzOQqKzhVOwceM+ZCMmGSEb0MWccYtjhxREub2IjUzJWwUG9DYdl8I3Wowk0VdcBWHuHUAOUzvqabAz55bKKXTqCzZAqn9gNJx3OpcNURAMt1la0sGCZ0eKihAvadQ6cauilzjuzzbgDd0F5jUu4HdFX/SY6nFp29NOj6GTKq6FnWv2g/77an7ls4lI2nPd9z3ZzD174Tuo6Orqx2Q47nFmMy1pyvIQZbn23Bag5SdKsPLupCYACA8LT3m+/lGi7c11d2KsoQ2EEL+4ekmHbx4F21ACJ01AEpm32Qps/3HvaKiMHvbuhrw4bbYiSDLSMgpf3Q6AbUmeb8GdkbeH8tORc+wsMbAwMVjl1mUqVrY+FRdUgG7BzfthK8KuO0Be9zh0/62WKVKpRrKwiAo2txk7n6eTfEZ7oiryNy02QDPtB89nPLzI/h9368f+ADok2fP7UAj46PnkeyEjWEdOPIevp5AwD4n+Z/NeQ6Hzg5Z7rMm5IlnXofVHXhzaKgU2WzBoHq4iX4Qaz3HwpwXwcunULpjlNqDELB8JoueGsFpFJ92CuMLCwMtZ3BM6CCIgD35naPHoClqja61xsLw02GwSvS4E+3KmUt+3WYvCqmEHRGwsy1wZ4QhABUf3aFh+674Tl83rceOolTVvymGDE2eRBpC3O+KEZi0rPP7buyy0/pIeNL3Yj6GxnnP47uPYGfjcj2CEMMyb4ej4L0XssN4/qC6luhubYI70duuJ7JG2xCsw0U3T3cZSl2cVHpPhMrLLb1wLrC8rNBTxde4tF1drBkPsm+oSagkXVk9lUaG0SQTvmTBm+tuVFHy4GrbNYla4sgQ4WqAl0togF5DFtLV2LS0xDekUkZteQoZOQwdbAUPULF6vdCDQhp26+g47sqcLM5gFenPtimTaaKMXVjOFzDuzmuBNS4DAbquh8t4/xuMc4QmfeRPPDIsOzXPcLEewK4pMfKUCkMC0qDbWFIY83J+2oeSoHjCMcM2NyOsKmxrboQKlG4omd41zbfQSDgJHPnA1WGvGOy0FUi7tBRK5J/kZO8Z1vwpmRnpj695gpyTfse6k+sOVdIviufpSBsnc0BvLVjQnZqcDuZbvbRUf9U85B3Dvrrquckqy0ibhUBQYX/d+0QRJHLtYy2hT2jihVJ6tHp4tL4Cnq4PDNcdWLSgDsZ4B0Cn/m8VcsO7NACvLbvheRBF9AvTJoYktS7xif138SQf0tBV2sqEt6VpHzoyb6hBXhqRYVoyPXUmi212txTOWHiRrk/tfK5UJOnnRNySchYasP1q0xb4/2NxghJ/x+6GzXt3hNlHQAAAABJRU5ErkJggg==" alt="Mariá Head &amp; Hair Spa" width="175" height="82">
       <span class="logo__sub it">Black Mariá</span>
     </a>
     <nav class="label" aria-label="Mais">
@@ -287,28 +291,16 @@ html{scrollbar-color:#2a2827 var(--bg)}
 <main id="topo">
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-title">
-    <!-- IMAGEM 01 · Hero em tela cheia
-         srcset (desktop): versão HORIZONTAL 2400×1350 (16:9)
-         src    (celular): versão VERTICAL 1080×1920 (9:16)
-         Se tiver só uma versão, cole a mesma URL nos dois. -->
-    <figure class="slot hero__media">
-      <picture>
-        <source media="(min-width: 768px)" srcset="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/imagem-01a-hero-desktop.webp">
-        <img src="" alt="Shampoo Mariá sobre veludo preto, em luz baixa" fetchpriority="high">
-      </picture>
-      <figcaption class="slot__hint" aria-hidden="true">Imagem 01</figcaption>
-    </figure>
-    <div class="wrap">
+    <div class="wrap hero__inner">
       <h1 class="hero__title display" id="hero-title">
-        <span class="ln" style="--i:0"><span>As melhores</span></span>
-        <span class="ln ln--split" style="--i:1"><span><span>condições</span> <span>do ano</span></span></span>
+        <span class="ln" style="--i:0"><span>As melhores condições do ano</span></span>
         <span class="hero__sub">chegam primeiro para você</span>
       </h1>
+      <p class="hero__lede">Cadastre-se para receber ofertas exclusivas e ter acesso antecipado à nossa seleção especial de produtos e rituais.</p>
+      <a class="btn" href="#entrar"><span class="btn__txt">Quero meu acesso antecipado</span><span class="btn__ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
     </div>
-    <div class="hero__foot">
-      <p>Cadastre-se para receber ofertas exclusivas e ter acesso antecipado à nossa seleção especial de produtos e rituais.</p>
-      <a class="link" href="#entrar">Quero meu acesso antecipado <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
-    </div>
+    <!-- IMAGEM 01 · Banner de produtos · 1536×1024 (3:2) -->
+    <figure class="hero__media"><img src="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/Maria_BLACK.png" alt="Linha de produtos Mariá sobre veludo preto: blend, shampoo, condicionador, vela, máscara e escova dourada" fetchpriority="high"></figure>
   </section>
 
   <!-- LISTA VIP (topo) -->
@@ -400,7 +392,7 @@ html{scrollbar-color:#2a2827 var(--bg)}
           <p class="card__deal">Produtos com mais de 30% OFF somente no dia 27/11</p>
         </div>
       </article>
-      <div class="cards__more rv"><a class="link" href="#lista-vip">Quero meu acesso antecipado <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a></div>
+      <div class="cards__more rv"><a class="btn" href="#lista-vip"><span class="btn__txt">Quero meu acesso antecipado</span><span class="btn__ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a></div>
     </div>
 
     <p class="note it">A seleção de produtos e as condições serão divulgadas nos canais oficiais da Mariá. A disponibilidade pode variar conforme cada oferta.</p>
@@ -421,9 +413,11 @@ html{scrollbar-color:#2a2827 var(--bg)}
         </div>
       </div>
     </div>
+    <!-- IMAGEM 05 · Tratamento no spa (SpaCabelo) · recomendado: versão otimizada imagem-05-spa-cabelo.webp (2400px) -->
+    <figure class="slot essence__photo rv"><img src="https://pub-89f7f71474a64b9782aef64b59d74aea.r2.dev/Mari%C3%A1/LP%20Black/SpaCabelo.jpeg" alt="Ritual de Head Spa no Mariá, com duas terapeutas e vapor no couro cabeludo" loading="lazy"><figcaption class="slot__hint" aria-hidden="true">Imagem 05</figcaption></figure>
     <div class="essence__close rv">
       <p class="it">Seu próximo cuidado pode começar aqui.</p>
-      <a class="link" href="#lista-vip">Entrar para a lista VIP <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+      <a class="btn" href="#lista-vip"><span class="btn__txt">Entrar para a lista VIP</span><span class="btn__ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></a>
     </div>
   </section>
 
